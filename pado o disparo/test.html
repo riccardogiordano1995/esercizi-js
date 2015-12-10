@@ -10,8 +10,11 @@
 
     var num = prompt("inserisci un numero");
 
+while (isNaN(num) == true || num==0){
+   var num = prompt("Devi inserire un numero!");  
+}
 
-if(!isNaN(num)){
+
     if(num % 2 == 0) {
       alert(num + " è pari")
     }
@@ -19,11 +22,9 @@ if(!isNaN(num)){
     else {
       alert(num + " é dispari")
     }
-}
 
-else{
-  alert("il numero inserito non è corretto")
-}
+
+
 
 
     
