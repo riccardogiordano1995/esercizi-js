@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<title>Pari o dispari</title>
+
+</head>
+
+<body>
+
+<script type="text/javascript">
+
+var ciclo = true
+
+while(ciclo){
+
+  var num = prompt("inserisci un numero");
+
+  if(!isNaN(num)){
+
+      if(num % 2 == 0) {
+
+        alert(num + " è pari")
+      
+      } else {
+        alert(num + " é dispari")
+        ciclo = false;
+      }
+
+  } else {
+
+    alert("il numero inserito non è corretto")
+  
+  }
+}
+
+
+</script>
+
+</body>
+</html>
