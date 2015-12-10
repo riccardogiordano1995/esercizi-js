@@ -8,24 +8,37 @@
 
     <script type="text/javascript">
 
-    var num = prompt("inserisci un numero");
+      var num = prompt("inserisci un numero");
+      var cond = true;
 
-
-if(!isNaN(num)){
-    if(num % 2 == 0) {
-      alert(num + " è pari")
-    }
-
-    else {
-      alert(num + " é dispari")
-    }
-}
-
-else{
-  alert("il numero inserito non è corretto")
-}
-
-
+      while(cond){
+        if(!isNaN(num)){
+          if(num % 2 == 0) {
+            alert(num + " è pari");
+            var ris = confirm("Vuoi continuare?");
+            if (ris == true) {
+              var num = prompt("inserisci un numero");
+            }
+            else{
+              cond=false;
+            };
+          }
+          else {
+            alert(num + " é dispari");
+            var ris = confirm("Vuoi continuare?");
+            if (ris == true) {
+              var num = prompt("inserisci un numero");
+            }
+            else{
+              cond=false;
+            };
+          }
+        }
+        else{
+          alert("il numero inserito non è corretto");
+          var num = prompt("inserisci un numero");
+        }
+      }
     
     </script>
 
