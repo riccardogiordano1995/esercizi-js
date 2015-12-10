@@ -8,25 +8,37 @@
 
     <script type="text/javascript">
 
+
+
+    var serie = true;
+
+while (serie) {
     var num = prompt("inserisci un numero");
-
-
 if(!isNaN(num)){
+
     if(num % 2 == 0) {
+
       alert(num + " è pari")
+
     }
 
     else {
+
       alert(num + " é dispari")
+      serie=false;
     }
+
 }
 
 else{
+
   alert("il numero inserito non è corretto")
+
+  }
+
 }
 
 
-    
     </script>
 
 </body>
